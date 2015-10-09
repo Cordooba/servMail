@@ -1,0 +1,18 @@
+h1 {
+	font-family: cursive;
+
+}
+
+label { 
+	font-family: cursive;
+	width: 200px;
+}
+
+input {
+	width: 200px;
+}
+
+p {
+	font-family: cursive;
+	color: blue;
+}
