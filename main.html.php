@@ -28,10 +28,10 @@
 	</label>
 	<br>
 	<br>
-	</form>
 	<hr>
-	<br>
-	<br>
 		<input type="submit" value="Enviar">
+	</form>
+	<br>
+	<br>
 </body>
 </html>

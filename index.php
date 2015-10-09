@@ -7,7 +7,7 @@
 		if(empty($name) || empty($subname) || empty($mail) || empty($message)) {
 			$errores['emp']=true;
 		}
-		if(is_string($name) || is_string($subname) || is_string($mail) || is_string($message)) {
+		if(!is_string($name) || !is_string($subname) || !is_string($mail) || !is_string($message)) {
 			$errores['string']=true;
 		}
 
@@ -24,9 +24,9 @@
 		$mail=htmlspecialchars($_POST['mail'], ENT_QUOTES, 'UTF-8');
 		$message=htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8');
 
-		if(verificarDatos($name,$subname,$mail,$message)) {
+		if(!verificarDatos($name,$subname,$mail,$message)) {
 
-			include 'error.h';
+			include 'error.html.php';
 
 		}else{
 
